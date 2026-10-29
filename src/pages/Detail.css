@@ -1,0 +1,147 @@
+.detail {
+  text-align: left;
+  max-width: 900px;
+}
+
+.detail__back {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.detail__back:hover {
+  background: #f3f3f3;
+}
+
+.detail__layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.detail__image-box {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: #d9d9d9;
+  border-radius: 16px;
+}
+
+.detail__image-box img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.detail__name {
+  margin: 0 0 6px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  text-transform: capitalize;
+  letter-spacing: -0.02em;
+}
+
+.detail__meta {
+  margin: 0 0 24px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.detail__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.detail__stat {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.detail__stat-label {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.detail__stat-bar {
+  height: 10px;
+  background: #e5e5e5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.detail__stat-fill {
+  height: 100%;
+  background: #555;
+  border-radius: 999px;
+}
+
+.detail__description {
+  margin: 0 0 28px;
+  color: #555;
+  line-height: 1.55;
+  max-width: 42ch;
+}
+
+.detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.detail__btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.detail__btn--primary {
+  background: #444;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.detail__btn--primary:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.detail__btn--secondary {
+  background: #fff;
+  border: 1px solid #444;
+  color: #333;
+}
+
+.detail__btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .detail__layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .detail__image-box {
+    max-width: 280px;
+  }
+
+  .detail__name {
+    font-size: 2rem;
+  }
+}
