@@ -1,0 +1,46 @@
+.pokemon-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+
+.pokemon-row:hover {
+  background: #f7f7f7;
+}
+
+.pokemon-row--loading {
+  opacity: 0.6;
+  list-style: none;
+}
+
+.pokemon-row__thumb {
+  width: 48px;
+  height: 48px;
+  background: #d9d9d9;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.pokemon-row__name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #222;
+  text-transform: capitalize;
+  flex: 1;
+  text-align: left;
+}
+
+.pokemon-row__meta {
+  color: #666;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
