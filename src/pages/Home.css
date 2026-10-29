@@ -1,0 +1,150 @@
+.home {
+  text-align: left;
+  max-width: 800px;
+}
+
+.home__title {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -0.03em;
+}
+
+.home__subtitle {
+  margin: 0 0 20px;
+  color: #666;
+  font-size: 1.05rem;
+  max-width: 40ch;
+}
+
+.home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.home__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px;
+  background: #444;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.home__btn:hover {
+  opacity: 0.9;
+}
+
+.home__section {
+  margin-bottom: 36px;
+}
+
+.home__heading {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  color: #222;
+}
+
+.home__teams {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.home__team-card {
+  display: block;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home__team-card:hover {
+  background: #f7f7f7;
+}
+
+.home__team-name {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.home__team-count {
+  margin: 0 0 14px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.home__team-sprites {
+  display: flex;
+  gap: 8px;
+}
+
+.home__sprite {
+  width: 44px;
+  height: 44px;
+  background: #d9d9d9;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.home__sprite--empty {
+  display: inline-block;
+}
+
+.home__favorites {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home__favorite-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home__favorite-row:hover {
+  background: #f7f7f7;
+}
+
+.home__favorite-name {
+  flex: 1;
+  font-weight: 700;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.home__favorite-id {
+  color: #666;
+}
+
+.home__empty {
+  color: #777;
+}
+
+.home__empty a {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 1.9rem;
+  }
+}
